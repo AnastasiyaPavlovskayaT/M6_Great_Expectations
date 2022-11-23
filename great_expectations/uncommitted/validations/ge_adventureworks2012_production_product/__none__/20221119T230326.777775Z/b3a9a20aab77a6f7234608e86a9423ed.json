@@ -1,0 +1,150 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "Production.Product",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "my_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20221119T220326.787775Z"
+    },
+    "batch_spec": {
+      "batch_identifiers": {},
+      "data_asset_name": "Production.Product",
+      "data_asset_name_prefix": "",
+      "data_asset_name_suffix": "",
+      "include_schema_name": true,
+      "schema_name": "Production",
+      "table_name": "Product",
+      "type": "table"
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "Production.Product_ge_adventureworks2012_production_product",
+    "expectation_suite_name": "ge_adventureworks2012_production_product",
+    "great_expectations_version": "0.15.34",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2022-11-19T23:03:26.777775+00:00"
+    },
+    "validation_id": null,
+    "validation_time": "20221119T220326.835776Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "b3a9a20aab77a6f7234608e86a9423ed",
+          "max_value": 504,
+          "min_value": 504
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {},
+              "metric_name": "table.row_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 504
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "b3a9a20aab77a6f7234608e86a9423ed",
+          "column_set": [
+            "ProductLine",
+            "Color",
+            "Weight",
+            "ProductID",
+            "DiscontinuedDate",
+            "ListPrice",
+            "ModifiedDate",
+            "SafetyStockLevel",
+            "StandardCost",
+            "Class",
+            "SellStartDate",
+            "ReorderPoint",
+            "Style",
+            "WeightUnitMeasureCode",
+            "MakeFlag",
+            "Size",
+            "SizeUnitMeasureCode",
+            "FinishedGoodsFlag",
+            "Name",
+            "rowguid",
+            "SellEndDate",
+            "ProductModelID",
+            "DaysToManufacture",
+            "ProductSubcategoryID",
+            "ProductNumber"
+          ],
+          "exact_match": null
+        },
+        "meta": {
+          "profiler_details": {
+            "success_ratio": 1.0
+          }
+        }
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "ProductID",
+          "Name",
+          "ProductNumber",
+          "MakeFlag",
+          "FinishedGoodsFlag",
+          "Color",
+          "SafetyStockLevel",
+          "ReorderPoint",
+          "StandardCost",
+          "ListPrice",
+          "Size",
+          "SizeUnitMeasureCode",
+          "WeightUnitMeasureCode",
+          "Weight",
+          "DaysToManufacture",
+          "ProductLine",
+          "Class",
+          "Style",
+          "ProductSubcategoryID",
+          "ProductModelID",
+          "SellStartDate",
+          "SellEndDate",
+          "DiscontinuedDate",
+          "rowguid",
+          "ModifiedDate"
+        ]
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 2,
+    "success_percent": 100.0,
+    "successful_expectations": 2,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}

@@ -1,0 +1,725 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "Production.BillOfMaterials",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "my_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20221119T223644.834963Z"
+    },
+    "batch_spec": {
+      "batch_identifiers": {},
+      "data_asset_name": "Production.BillOfMaterials",
+      "data_asset_name_prefix": "",
+      "data_asset_name_suffix": "",
+      "include_schema_name": true,
+      "schema_name": "Production",
+      "table_name": "BillOfMaterials",
+      "type": "table"
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "adventureworks2012_product_checkpoint",
+    "expectation_suite_name": "ge_adventureworks2012_production_product",
+    "great_expectations_version": "0.15.34",
+    "run_id": {
+      "run_name": "20221119-233644-my-run-name-template",
+      "run_time": "2022-11-19T23:36:44.813935+00:00"
+    },
+    "validation_id": null,
+    "validation_time": "20221119T223644.891565Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID"
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column_values.unique.unexpected_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID"
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column_values.nonnull.unexpected_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metric_provider.py\", line 152, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 1,
+          "min_value": 1,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metric_provider.py\", line 152, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 999,
+          "min_value": 999,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 999,
+          "min_value": 1,
+          "mostly": 1.0,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "column_max_values_range_estimator": {
+              "metric_configuration": {
+                "domain_kwargs": {
+                  "column": "ProductID"
+                },
+                "metric_name": "column.max",
+                "metric_value_kwargs": null
+              },
+              "num_batches": 1
+            },
+            "column_min_values_range_estimator": {
+              "metric_configuration": {
+                "domain_kwargs": {
+                  "column": "ProductID"
+                },
+                "metric_name": "column.min",
+                "metric_value_kwargs": null
+              },
+              "num_batches": 1
+            }
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "(pyodbc.ProgrammingError) ('42S22', \"[42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (8180)\")\n[SQL: SELECT percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_1, percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_2, percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_3 \nFROM [#ge_temp_ddff337c]]\n[parameters: (0.25, 0.5, 0.75)]\n(Background on this error at: https://sqlalche.me/e/14/f405)",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1900, in _execute_context\n    self.dialect.do_execute(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\default.py\", line 736, in do_execute\n    cursor.execute(statement, parameters)\npyodbc.ProgrammingError: ('42S22', \"[42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (8180)\")\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 34, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metrics\\column_quantile_values.py\", line 108, in _sqlalchemy\n    return _get_column_quantiles_mssql(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metrics\\column_quantile_values.py\", line 232, in _get_column_quantiles_mssql\n    raise pe\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metrics\\column_quantile_values.py\", line 223, in _get_column_quantiles_mssql\n    quantiles_results: Row = sqlalchemy_engine.execute(quantiles_query).fetchone()\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1380, in execute\n    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\sql\\elements.py\", line 334, in _execute_on_connection\n    return connection._execute_clauseelement(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1572, in _execute_clauseelement\n    ret = self._execute_context(\n          ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1943, in _execute_context\n    self._handle_dbapi_exception(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 2124, in _handle_dbapi_exception\n    util.raise_(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\util\\compat.py\", line 210, in raise_\n    raise exception\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1900, in _execute_context\n    self.dialect.do_execute(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sqlalchemy\\engine\\default.py\", line 736, in do_execute\n    cursor.execute(statement, parameters)\nsqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42S22', \"[42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (8180)\")\n[SQL: SELECT percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_1, percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_2, percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_3 \nFROM [#ge_temp_ddff337c]]\n[parameters: (0.25, 0.5, 0.75)]\n(Background on this error at: https://sqlalche.me/e/14/f405)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: (pyodbc.ProgrammingError) ('42S22', \"[42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'ProductID'. (207); [42S22] [Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (8180)\")\n[SQL: SELECT percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_1, percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_2, percentile_disc(?) WITHIN GROUP (ORDER BY [ProductID] ASC) OVER () AS anon_3 \nFROM [#ge_temp_ddff337c]]\n[parameters: (0.25, 0.5, 0.75)]\n(Background on this error at: https://sqlalche.me/e/14/f405)\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "quantile_ranges": {
+            "quantiles": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "value_ranges": [
+              [
+                447,
+                447
+              ],
+              [
+                747,
+                747
+              ],
+              [
+                873,
+                873
+              ]
+            ]
+          }
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.quantile_values",
+              "metric_value_kwargs": {
+                "allow_relative_error": false,
+                "quantiles": [
+                  0.25,
+                  0.5,
+                  0.75
+                ]
+              }
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 747.5,
+          "min_value": 747.5,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.median",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metric_provider.py\", line 152, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 673.0396825396825,
+          "min_value": 673.0396825396825,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.mean",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metric_provider.py\", line 152, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_stdev_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 229.37314180957807,
+          "min_value": 229.37314180957807,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.standard_deviation",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductID\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductID\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductID\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_stdev_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductID",
+          "max_value": 229.37314180957807,
+          "min_value": 229.37314180957807,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductID"
+              },
+              "metric_name": "column.standard_deviation",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductNumber\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductNumber\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductNumber\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductNumber"
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductNumber"
+              },
+              "metric_name": "column_values.unique.unexpected_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"ProductNumber\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"ProductNumber\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"ProductNumber\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "ProductNumber"
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ProductNumber"
+              },
+              "metric_name": "column_values.nonnull.unexpected_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "SizeUnitMeasureCode",
+          "mostly": 1.0,
+          "value_set": [
+            "CM "
+          ]
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "SizeUnitMeasureCode"
+              },
+              "metric_name": "column.distinct_values",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1,
+            "parse_strings_as_datetimes": false
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metric_provider.py\", line 152, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_unique_value_count_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "SizeUnitMeasureCode",
+          "max_value": 1,
+          "min_value": 1,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "SizeUnitMeasureCode"
+              },
+              "metric_name": "column.distinct_values.count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\column_aggregate_metric_provider.py\", line 152, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "SizeUnitMeasureCode",
+          "max_value": 0.005681818181818182,
+          "min_value": 0.005681818181818182,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "SizeUnitMeasureCode"
+              },
+              "metric_name": "column.unique_proportion",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 407, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n                                             ^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider.py\", line 387, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 178, in resolve_validation_graph\n    self._execution_engine.resolve_metrics(\n  File \"C:\\Users\\Anastasiya_Paulousk1\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 411, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"SizeUnitMeasureCode\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column": "SizeUnitMeasureCode",
+          "max_value": 0.005681818181818182,
+          "min_value": 0.005681818181818182,
+          "strict_max": false,
+          "strict_min": false
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "SizeUnitMeasureCode"
+              },
+              "metric_name": "column.unique_proportion",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "max_value": 504,
+          "min_value": 504
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {},
+              "metric_name": "table.row_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 2679
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "5e3c5b7b02412586c706438ab6de4eab",
+          "column_set": [
+            "ProductLine",
+            "Color",
+            "Weight",
+            "ProductID",
+            "DiscontinuedDate",
+            "ListPrice",
+            "ModifiedDate",
+            "SafetyStockLevel",
+            "StandardCost",
+            "Class",
+            "SellStartDate",
+            "ReorderPoint",
+            "Style",
+            "WeightUnitMeasureCode",
+            "MakeFlag",
+            "Size",
+            "SizeUnitMeasureCode",
+            "FinishedGoodsFlag",
+            "Name",
+            "rowguid",
+            "SellEndDate",
+            "ProductModelID",
+            "DaysToManufacture",
+            "ProductSubcategoryID",
+            "ProductNumber"
+          ],
+          "exact_match": null
+        },
+        "meta": {
+          "profiler_details": {
+            "success_ratio": 1.0
+          }
+        }
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "mismatched": {
+            "missing": [
+              "Class",
+              "Color",
+              "DaysToManufacture",
+              "DiscontinuedDate",
+              "FinishedGoodsFlag",
+              "ListPrice",
+              "MakeFlag",
+              "Name",
+              "ProductID",
+              "ProductLine",
+              "ProductModelID",
+              "ProductNumber",
+              "ProductSubcategoryID",
+              "ReorderPoint",
+              "SafetyStockLevel",
+              "SellEndDate",
+              "SellStartDate",
+              "Size",
+              "SizeUnitMeasureCode",
+              "StandardCost",
+              "Style",
+              "Weight",
+              "WeightUnitMeasureCode",
+              "rowguid"
+            ],
+            "unexpected": [
+              "BOMLevel",
+              "BillOfMaterialsID",
+              "ComponentID",
+              "EndDate",
+              "PerAssemblyQty",
+              "ProductAssemblyID",
+              "StartDate",
+              "UnitMeasureCode"
+            ]
+          }
+        },
+        "observed_value": [
+          "BOMLevel",
+          "BillOfMaterialsID",
+          "ComponentID",
+          "EndDate",
+          "ModifiedDate",
+          "PerAssemblyQty",
+          "ProductAssemblyID",
+          "StartDate",
+          "UnitMeasureCode"
+        ]
+      },
+      "success": false
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 18,
+    "success_percent": 0.0,
+    "successful_expectations": 0,
+    "unsuccessful_expectations": 18
+  },
+  "success": false
+}
