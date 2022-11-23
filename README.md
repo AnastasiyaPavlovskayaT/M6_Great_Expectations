@@ -1,21 +1,16 @@
-# Great Expectations tutorials
+# M6_PySpark_GreatExpectations Home Task
 
-This repository contains the material for a number of Great Expectations tutorials. They all contain instructions in the respective README files.
+## Environment setup:
+1. Install Docker on Windows https://docs.docker.com/desktop/windows/install/
+2. Follow the instructions to set up Great Expectation and connect to the MSSQL
+https://docs.greatexpectations.io/docs/guides/connecting_to_your_data/database/mssql
 
-**We invite community contributions for these tutorials!**
+## Test result
+1. When all steps from the Environment setup are done, the Data Doc file with test results will be open.
+2. Also, Data Doc files with previous run results can be found in the following way
+great_expectations\uncommitted\data_docs\local_site\validations\ge_adventureworks2012_production_product\__none__
 
 
-## getting_started_tutorial_final_v3_api [TBD]
-This example contains the final state of the "Getting started with Great Expectations" tutorial for the Great 
-Expectations API v3 (Batch Kwargs API), which is included in Great Expectations version 0.13 and above. 
-It also acts as a starting point to explore and demo Great Expectations. See the README in the directory for details.
 
-## getting_started_tutorial_final_v2_api
-This example contains the final state of the "Getting started with Great Expectations" tutorial for the Great Expectations 
-API v2 (Batch Kwargs API) which applies to Great Expectations version 0.12.x and below. It also acts as a starting point 
-to explore and demo Great Expectations. See the README in the directory for details.
 
-## ge_dbt_airflow_tutorial
-This example demonstrates the use of Great Expectations in a data pipeline with dbt and Apache Airflow. 
-See the README in the directory for details. **Note** This tutorial currently requires an update to work with the 
-new-style Checkpoints that were introduced in version 0.13.8.
+
